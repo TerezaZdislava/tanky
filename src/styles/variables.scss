@@ -1,0 +1,88 @@
+$background-color: #1c1b16;
+$font-color: #f9f5e1;
+$orange: #f25322;
+$black: #000000;
+
+h1,
+h2,
+h3 {
+  color: $font-color;
+  //prepsat do em
+  font-weight: 800;
+  margin: 0;
+}
+h1 {
+  font-size: 85px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-weight: 500;
+  color: $font-color;
+  opacity: 0.5;
+  font-size: 16px;
+  line-height: 2;
+}
+button {
+  transition: 0.3s;
+}
+.button-primary {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      170deg,
+      rgba(242, 221, 34, 1) 0%,
+      rgba(#1c1b16, 1) 100%
+    )
+    1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 65%, 93% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 65%, 93% 100%, 0% 100%);
+  font-size: 18px;
+  font-weight: 700;
+  background: rgb(242, 83, 34);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 83, 34, 1) 0%,
+    rgba(242, 83, 34, 0.7931547619047619) 50%,
+    rgba(242, 83, 34, 1) 100%
+  );
+  color: $font-color;
+  padding: 15px 90px;
+  cursor: pointer;
+}
+.button-primary:hover {
+  background: rgb(210, 62, 17);
+  background: linear-gradient(
+    180deg,
+    rgba(210, 62, 17, 1) 0%,
+    rgba(155, 47, 14, 0.8113620448179272) 50%,
+    rgba(210, 62, 17, 1) 100%
+  );
+}
+.button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+  cursor: pointer;
+  background-color: $black;
+  color: $font-color;
+  width: 58px;
+  height: 58px;
+  svg {
+    stroke: $font-color;
+  }
+}
+.button-secondary:hover {
+  background-color: $orange;
+  color: $black;
+  svg {
+    stroke: $black;
+  }
+}
